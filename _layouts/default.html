@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="/style.css" rel="stylesheet"/>
+	<title>{{ page.title }}&mdash;屏東</title>
+</head>
+<body>
+	<div id="header">
+		<h1 id="website_title">
+			<img src="/images/pingtung icon.png" alt="屏東 logo"> 屏東
+		</h1>
+		<nav></nav>
+	</div>
+	<div id="main">
+		{{ content | safe }}
+	</div>
+	<div id="footer">
+		<a href="https://github.com/Pingtung/pingtung.github.io" target="_target">Source Code</a>
+	</div>
+</body>
+</html>

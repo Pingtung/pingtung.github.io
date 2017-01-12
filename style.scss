@@ -1,0 +1,50 @@
+---
+---
+
+
+html{
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: 0 auto -3rem;
+	position: relative;
+}
+
+#header {
+	background: #343434;
+	width: 100%;
+
+	h1 {
+		color: #fff;
+		font-size: 2rem;
+		margin: 0;
+		padding: 2rem;
+		vertical-align: top;
+
+		img {
+			vertical-align: top;
+			width: 2rem;
+		}
+	}
+}
+
+#main {
+	min-height: 100%;
+	padding: 1rem 3rem;
+}
+
+#footer {
+	background: #222;
+	bottom: 0;
+	height: 1rem;
+	padding: 1rem 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+
+	a {
+		color: #fff;
+	}
+}
