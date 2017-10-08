@@ -1,10 +1,7 @@
 ---
 ---
 
-
-html{
-	height: 100%;
-}
+html { height: 100%; }
 
 body {
 	min-height: 100%;
@@ -36,23 +33,44 @@ body {
 	  right: 0;
     top: 0;
 
-	  ul {
-	    li {
-        display: inline-block;
+    #nav-trigger, #nav-status { display: none; }
 
-        a {
-          color: #fff;
-          display: block;
-          font-size: 1.25rem;
-          padding: .5rem 1rem;
-          text-decoration: none;
+	  ul li {
+      display: inline-block;
 
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-	    }
+      a {
+        background: #343434;
+        color: #fff;
+        display: block;
+        font-size: 1.25rem;
+        padding: .5rem 1rem;
+        text-decoration: none;
+
+        &:hover { text-decoration: underline; }
+      }
 	  }
+
+    // RWD for nav
+    @media screen and (max-width: 610px) {
+      #nav-trigger {
+        color: #fff;
+        display: block;
+        font-size: 2rem;
+        float: right;
+        padding: 1rem;
+        width: 100%;
+        text-align: right;
+      }
+
+      ul li { display: none; }
+
+      #nav-status:checked + ul li {
+        display: block;
+
+        a { padding: 1rem 2rem; }
+      }
+
+    }
 	}
 }
 
@@ -70,9 +88,7 @@ body {
 	text-align: center;
 	width: 100%;
 
-	a {
-		color: #fff;
-	}
+	a { color: #fff; }
 }
 
 #calendar {

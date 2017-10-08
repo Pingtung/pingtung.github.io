@@ -6,6 +6,7 @@
 	<link href="/style.css" rel="stylesheet"/>
 	<title>{{ page.title }} &dash; 屏東</title>
 	<link rel="icon" type="image/png" href="/images/pingtung icon.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.5.1/fullcalendar.min.css' />
 </head>
@@ -16,6 +17,10 @@
         <img src="/images/pingtung icon.png" alt="屏東 logo"> 屏東
       </h1>
       <nav>
+        <label id="nav-trigger" for="nav-status">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <input type="checkbox" id="nav-status">
         <ul>
           <li><a href="/">最新消息</a></li>
           <li><a href="/about.html">關於屏東</a></li>
