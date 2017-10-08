@@ -4,20 +4,36 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="/style.css" rel="stylesheet"/>
-	<title>{{ page.title }}&mdash;屏東</title>
+	<title>{{ page.title }} &dash; 屏東</title>
+	<link rel="icon" type="image/png" href="/images/pingtung icon.png" />
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.5.1/fullcalendar.min.css' />
 </head>
 <body>
-	<div id="header">
-		<h1 id="website_title">
-			<img src="/images/pingtung icon.png" alt="屏東 logo"> 屏東
-		</h1>
-		<nav></nav>
-	</div>
-	<div id="main">
-		{{ content | safe }}
-	</div>
-	<div id="footer">
-		<a href="https://github.com/Pingtung/pingtung.github.io" target="_target">Source Code</a>
-	</div>
+    <div id="header">
+    <header>
+      <h1 id="website_title">
+        <img src="/images/pingtung icon.png" alt="屏東 logo"> 屏東
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="/">最新消息</a></li>
+          <li><a href="/about.html">關於屏東</a></li>
+          <li><a href="/myth.html">在地傳說</a></li>
+          <li><a href="/link.html">相關網站</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div id="main">
+    <main>
+      {{ content | safe }}
+    </main>
+  </div>
+  <div id="footer">
+    <footer>
+      <a href="https://github.com/Pingtung/pingtung.github.io" target="_target">本站原始碼</a>
+    </footer>
+  </div>
 </body>
 </html>

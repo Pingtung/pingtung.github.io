@@ -14,19 +14,45 @@ body {
 
 #header {
 	background: #343434;
+	position: relative;
 	width: 100%;
 
 	h1 {
 		color: #fff;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		margin: 0;
-		padding: 2rem;
+		padding: 1rem 2rem;
 		vertical-align: top;
 
 		img {
-			vertical-align: top;
-			width: 2rem;
+			vertical-align: text-top;
+			width: 1.5rem;
 		}
+	}
+
+	nav {
+	  padding-right: 1rem;
+	  position: absolute;
+	  right: 0;
+    top: 0;
+
+	  ul {
+	    li {
+        display: inline-block;
+
+        a {
+          color: #fff;
+          display: block;
+          font-size: 1.25rem;
+          padding: .5rem 1rem;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+	    }
+	  }
 	}
 }
 
@@ -47,4 +73,9 @@ body {
 	a {
 		color: #fff;
 	}
+}
+
+#calendar {
+  padding: 0 20%;
+  width: 60%;
 }

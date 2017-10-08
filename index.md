@@ -2,7 +2,6 @@
 title: 首頁
 ---
 
-這個網站還不知道要放什麼⋯⋯
+對於本網站有任何想法，都歡迎聯絡 `poppin.wildsky+pt (at) github.com`
 
-有想法歡迎聯絡 `poppin.wildsky+pt (at) github.com`
 
